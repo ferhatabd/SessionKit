@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50DBF88F22E24E9500281485 /* TrBase.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50DBF85E22E24E9500281485 /* TrBase.strings */; };
+		50DBF89022E24E9500281485 /* SessionData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF85F22E24E9500281485 /* SessionData.xcdatamodeld */; };
+		50DBF89122E24E9500281485 /* DKBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86322E24E9500281485 /* DKBreathView.swift */; };
+		50DBF89222E24E9500281485 /* DKPriveSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86522E24E9500281485 /* DKPriveSession+CoreDataProperties.swift */; };
+		50DBF89322E24E9500281485 /* DKPriveSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86622E24E9500281485 /* DKPriveSession+CoreDataClass.swift */; };
+		50DBF89422E24E9500281485 /* DKSubversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86822E24E9500281485 /* DKSubversion.swift */; };
+		50DBF89522E24E9500281485 /* DKSubversion+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86922E24E9500281485 /* DKSubversion+CoreDataProperties.swift */; };
+		50DBF89622E24E9500281485 /* DKSubversion+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86A22E24E9500281485 /* DKSubversion+CoreDataClass.swift */; };
+		50DBF89722E24E9500281485 /* DKSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86C22E24E9500281485 /* DKSession+CoreDataClass.swift */; };
+		50DBF89822E24E9500281485 /* DKSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86D22E24E9500281485 /* DKSession.swift */; };
+		50DBF89922E24E9500281485 /* DKSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86E22E24E9500281485 /* DKSession+CoreDataProperties.swift */; };
+		50DBF89A22E24E9500281485 /* DKSessionTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87022E24E9500281485 /* DKSessionTheme.swift */; };
+		50DBF89B22E24E9500281485 /* DKSessionTheme+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87122E24E9500281485 /* DKSessionTheme+CoreDataProperties.swift */; };
+		50DBF89C22E24E9500281485 /* DKSessionTheme+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87222E24E9500281485 /* DKSessionTheme+CoreDataClass.swift */; };
+		50DBF89D22E24E9500281485 /* DKCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87422E24E9500281485 /* DKCategory+CoreDataClass.swift */; };
+		50DBF89E22E24E9500281485 /* DKCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87522E24E9500281485 /* DKCategory+CoreDataProperties.swift */; };
+		50DBF89F22E24E9500281485 /* DKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87622E24E9500281485 /* DKCategory.swift */; };
+		50DBF8A022E24E9500281485 /* SessionDbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87822E24E9500281485 /* SessionDbModel.swift */; };
+		50DBF8A122E24E9500281485 /* SubversionDbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87922E24E9500281485 /* SubversionDbModel.swift */; };
+		50DBF8A222E24E9500281485 /* _Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87B22E24E9500281485 /* _Double.swift */; };
+		50DBF8A322E24E9500281485 /* _CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87C22E24E9500281485 /* _CGFloat.swift */; };
+		50DBF8A422E24E9500281485 /* _DKSessionDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87D22E24E9500281485 /* _DKSessionDataHandler.swift */; };
+		50DBF8A522E24E9500281485 /* _String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87E22E24E9500281485 /* _String.swift */; };
+		50DBF8A622E24E9500281485 /* DKBreathView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50DBF88022E24E9500281485 /* DKBreathView.xib */; };
+		50DBF8A822E24E9500281485 /* SessionPlayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88322E24E9500281485 /* SessionPlayable.swift */; };
+		50DBF8A922E24E9500281485 /* SessionDownloadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88422E24E9500281485 /* SessionDownloadable.swift */; };
+		50DBF8AA22E24E9500281485 /* MediaPlayerControllable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88522E24E9500281485 /* MediaPlayerControllable.swift */; };
+		50DBF8AB22E24E9500281485 /* DKCSIndexible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88622E24E9500281485 /* DKCSIndexible.swift */; };
+		50DBF8AD22E24E9500281485 /* FileSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88922E24E9500281485 /* FileSingleton.swift */; };
+		50DBF8AE22E24E9500281485 /* FileSystemSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88A22E24E9500281485 /* FileSystemSetup.swift */; };
+		50DBF8AF22E24E9500281485 /* DKSessionDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88B22E24E9500281485 /* DKSessionDataHandler.swift */; };
+		50DBF8B022E24E9500281485 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88C22E24E9500281485 /* DownloadService.swift */; };
+		50DBF8B422E24EE900281485 /* SessionKitWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DBF85B22E24E9500281485 /* SessionKitWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50DBF8B722E24EE900281485 /* SessionData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF85F22E24E9500281485 /* SessionData.xcdatamodeld */; };
+		50DBF8B822E24EE900281485 /* DKSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86E22E24E9500281485 /* DKSession+CoreDataProperties.swift */; };
+		50DBF8B922E24EE900281485 /* DKCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87522E24E9500281485 /* DKCategory+CoreDataProperties.swift */; };
+		50DBF8BA22E24EE900281485 /* DKCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87422E24E9500281485 /* DKCategory+CoreDataClass.swift */; };
+		50DBF8C022E24EE900281485 /* SubversionDbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87922E24E9500281485 /* SubversionDbModel.swift */; };
+		50DBF8C122E24EE900281485 /* DKSessionDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88B22E24E9500281485 /* DKSessionDataHandler.swift */; };
+		50DBF8C222E24EE900281485 /* DKSubversion+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86922E24E9500281485 /* DKSubversion+CoreDataProperties.swift */; };
+		50DBF8C322E24EE900281485 /* DKSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86D22E24E9500281485 /* DKSession.swift */; };
+		50DBF8C522E24EE900281485 /* DKCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87622E24E9500281485 /* DKCategory.swift */; };
+		50DBF8C722E24EE900281485 /* DKSubversion+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86A22E24E9500281485 /* DKSubversion+CoreDataClass.swift */; };
+		50DBF8C822E24EE900281485 /* DKPriveSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86622E24E9500281485 /* DKPriveSession+CoreDataClass.swift */; };
+		50DBF8CB22E24EE900281485 /* SessionDbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87822E24E9500281485 /* SessionDbModel.swift */; };
+		50DBF8CC22E24EE900281485 /* _String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87E22E24E9500281485 /* _String.swift */; };
+		50DBF8CE22E24EE900281485 /* FileSystemSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88A22E24E9500281485 /* FileSystemSetup.swift */; };
+		50DBF8CF22E24EE900281485 /* DKSubversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86822E24E9500281485 /* DKSubversion.swift */; };
+		50DBF8D022E24EE900281485 /* DKPriveSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86522E24E9500281485 /* DKPriveSession+CoreDataProperties.swift */; };
+		50DBF8D122E24EE900281485 /* DKSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86C22E24E9500281485 /* DKSession+CoreDataClass.swift */; };
+		50DBF8D322E24EE900281485 /* FileSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88922E24E9500281485 /* FileSingleton.swift */; };
+		50DBF8D722E24EE900281485 /* TrBase.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50DBF85E22E24E9500281485 /* TrBase.strings */; };
+		50DBF8DF22E24F3100281485 /* SessionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DBF85C22E24E9500281485 /* SessionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		50DBF84F22E24E4800281485 /* SessionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50DBF85B22E24E9500281485 /* SessionKitWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionKitWatch.h; sourceTree = "<group>"; };
+		50DBF85C22E24E9500281485 /* SessionKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionKit.h; sourceTree = "<group>"; };
+		50DBF85E22E24E9500281485 /* TrBase.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TrBase.strings; sourceTree = "<group>"; };
+		50DBF86022E24E9500281485 /* SessionData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SessionData.xcdatamodel; sourceTree = "<group>"; };
+		50DBF86322E24E9500281485 /* DKBreathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKBreathView.swift; sourceTree = "<group>"; };
+		50DBF86522E24E9500281485 /* DKPriveSession+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKPriveSession+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50DBF86622E24E9500281485 /* DKPriveSession+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKPriveSession+CoreDataClass.swift"; sourceTree = "<group>"; };
+		50DBF86822E24E9500281485 /* DKSubversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKSubversion.swift; sourceTree = "<group>"; };
+		50DBF86922E24E9500281485 /* DKSubversion+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKSubversion+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50DBF86A22E24E9500281485 /* DKSubversion+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKSubversion+CoreDataClass.swift"; sourceTree = "<group>"; };
+		50DBF86C22E24E9500281485 /* DKSession+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKSession+CoreDataClass.swift"; sourceTree = "<group>"; };
+		50DBF86D22E24E9500281485 /* DKSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKSession.swift; sourceTree = "<group>"; };
+		50DBF86E22E24E9500281485 /* DKSession+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKSession+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50DBF87022E24E9500281485 /* DKSessionTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKSessionTheme.swift; sourceTree = "<group>"; };
+		50DBF87122E24E9500281485 /* DKSessionTheme+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKSessionTheme+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50DBF87222E24E9500281485 /* DKSessionTheme+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKSessionTheme+CoreDataClass.swift"; sourceTree = "<group>"; };
+		50DBF87422E24E9500281485 /* DKCategory+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKCategory+CoreDataClass.swift"; sourceTree = "<group>"; };
+		50DBF87522E24E9500281485 /* DKCategory+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKCategory+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		50DBF87622E24E9500281485 /* DKCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKCategory.swift; sourceTree = "<group>"; };
+		50DBF87822E24E9500281485 /* SessionDbModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDbModel.swift; sourceTree = "<group>"; };
+		50DBF87922E24E9500281485 /* SubversionDbModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubversionDbModel.swift; sourceTree = "<group>"; };
+		50DBF87B22E24E9500281485 /* _Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _Double.swift; sourceTree = "<group>"; };
+		50DBF87C22E24E9500281485 /* _CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _CGFloat.swift; sourceTree = "<group>"; };
+		50DBF87D22E24E9500281485 /* _DKSessionDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _DKSessionDataHandler.swift; sourceTree = "<group>"; };
+		50DBF87E22E24E9500281485 /* _String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _String.swift; sourceTree = "<group>"; };
+		50DBF88022E24E9500281485 /* DKBreathView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DKBreathView.xib; sourceTree = "<group>"; };
+		50DBF88122E24E9500281485 /* InfoWatch.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = InfoWatch.plist; sourceTree = "<group>"; };
+		50DBF88322E24E9500281485 /* SessionPlayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionPlayable.swift; sourceTree = "<group>"; };
+		50DBF88422E24E9500281485 /* SessionDownloadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDownloadable.swift; sourceTree = "<group>"; };
+		50DBF88522E24E9500281485 /* MediaPlayerControllable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerControllable.swift; sourceTree = "<group>"; };
+		50DBF88622E24E9500281485 /* DKCSIndexible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKCSIndexible.swift; sourceTree = "<group>"; };
+		50DBF88722E24E9500281485 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50DBF88922E24E9500281485 /* FileSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSingleton.swift; sourceTree = "<group>"; };
+		50DBF88A22E24E9500281485 /* FileSystemSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileSystemSetup.swift; sourceTree = "<group>"; };
+		50DBF88B22E24E9500281485 /* DKSessionDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKSessionDataHandler.swift; sourceTree = "<group>"; };
+		50DBF88C22E24E9500281485 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		50DBF8DD22E24EE900281485 /* SessionKitWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionKitWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50DBF84C22E24E4800281485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DBF8D422E24EE900281485 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50DBF84522E24E4800281485 = {
+			isa = PBXGroup;
+			children = (
+				50DBF85122E24E4800281485 /* SessionKit */,
+				50DBF85022E24E4800281485 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50DBF85022E24E4800281485 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF84F22E24E4800281485 /* SessionKit.framework */,
+				50DBF8DD22E24EE900281485 /* SessionKitWatch.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50DBF85122E24E4800281485 /* SessionKit */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF88722E24E9500281485 /* Info.plist */,
+				50DBF88122E24E9500281485 /* InfoWatch.plist */,
+				50DBF85C22E24E9500281485 /* SessionKit.h */,
+				50DBF85B22E24E9500281485 /* SessionKitWatch.h */,
+				50DBF85F22E24E9500281485 /* SessionData.xcdatamodeld */,
+				50DBF86122E24E9500281485 /* Models */,
+				50DBF88222E24E9500281485 /* Protocols */,
+				50DBF87A22E24E9500281485 /* Extensions */,
+				50DBF88822E24E9500281485 /* Services */,
+				50DBF85D22E24E9500281485 /* Localizations */,
+				50DBF87F22E24E9500281485 /* NibFiles */,
+			);
+			path = SessionKit;
+			sourceTree = "<group>";
+		};
+		50DBF85D22E24E9500281485 /* Localizations */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF85E22E24E9500281485 /* TrBase.strings */,
+			);
+			path = Localizations;
+			sourceTree = "<group>";
+		};
+		50DBF86122E24E9500281485 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF86222E24E9500281485 /* DKBreath */,
+				50DBF86422E24E9500281485 /* DKPriveSession */,
+				50DBF86722E24E9500281485 /* DKSubversion */,
+				50DBF86B22E24E9500281485 /* DKSession */,
+				50DBF86F22E24E9500281485 /* DKSessionTheme */,
+				50DBF87322E24E9500281485 /* DKCategory */,
+				50DBF87722E24E9500281485 /* SessionDbModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50DBF86222E24E9500281485 /* DKBreath */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF86322E24E9500281485 /* DKBreathView.swift */,
+			);
+			path = DKBreath;
+			sourceTree = "<group>";
+		};
+		50DBF86422E24E9500281485 /* DKPriveSession */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF86522E24E9500281485 /* DKPriveSession+CoreDataProperties.swift */,
+				50DBF86622E24E9500281485 /* DKPriveSession+CoreDataClass.swift */,
+			);
+			path = DKPriveSession;
+			sourceTree = "<group>";
+		};
+		50DBF86722E24E9500281485 /* DKSubversion */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF86822E24E9500281485 /* DKSubversion.swift */,
+				50DBF86922E24E9500281485 /* DKSubversion+CoreDataProperties.swift */,
+				50DBF86A22E24E9500281485 /* DKSubversion+CoreDataClass.swift */,
+			);
+			path = DKSubversion;
+			sourceTree = "<group>";
+		};
+		50DBF86B22E24E9500281485 /* DKSession */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF86C22E24E9500281485 /* DKSession+CoreDataClass.swift */,
+				50DBF86D22E24E9500281485 /* DKSession.swift */,
+				50DBF86E22E24E9500281485 /* DKSession+CoreDataProperties.swift */,
+			);
+			path = DKSession;
+			sourceTree = "<group>";
+		};
+		50DBF86F22E24E9500281485 /* DKSessionTheme */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF87022E24E9500281485 /* DKSessionTheme.swift */,
+				50DBF87122E24E9500281485 /* DKSessionTheme+CoreDataProperties.swift */,
+				50DBF87222E24E9500281485 /* DKSessionTheme+CoreDataClass.swift */,
+			);
+			path = DKSessionTheme;
+			sourceTree = "<group>";
+		};
+		50DBF87322E24E9500281485 /* DKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF87422E24E9500281485 /* DKCategory+CoreDataClass.swift */,
+				50DBF87522E24E9500281485 /* DKCategory+CoreDataProperties.swift */,
+				50DBF87622E24E9500281485 /* DKCategory.swift */,
+			);
+			path = DKCategory;
+			sourceTree = "<group>";
+		};
+		50DBF87722E24E9500281485 /* SessionDbModels */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF87822E24E9500281485 /* SessionDbModel.swift */,
+				50DBF87922E24E9500281485 /* SubversionDbModel.swift */,
+			);
+			path = SessionDbModels;
+			sourceTree = "<group>";
+		};
+		50DBF87A22E24E9500281485 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF87B22E24E9500281485 /* _Double.swift */,
+				50DBF87C22E24E9500281485 /* _CGFloat.swift */,
+				50DBF87D22E24E9500281485 /* _DKSessionDataHandler.swift */,
+				50DBF87E22E24E9500281485 /* _String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		50DBF87F22E24E9500281485 /* NibFiles */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF88022E24E9500281485 /* DKBreathView.xib */,
+			);
+			path = NibFiles;
+			sourceTree = "<group>";
+		};
+		50DBF88222E24E9500281485 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF88322E24E9500281485 /* SessionPlayable.swift */,
+				50DBF88422E24E9500281485 /* SessionDownloadable.swift */,
+				50DBF88522E24E9500281485 /* MediaPlayerControllable.swift */,
+				50DBF88622E24E9500281485 /* DKCSIndexible.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		50DBF88822E24E9500281485 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF88922E24E9500281485 /* FileSingleton.swift */,
+				50DBF88A22E24E9500281485 /* FileSystemSetup.swift */,
+				50DBF88B22E24E9500281485 /* DKSessionDataHandler.swift */,
+				50DBF88C22E24E9500281485 /* DownloadService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		50DBF84A22E24E4800281485 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DBF8DF22E24F3100281485 /* SessionKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DBF8B222E24EE900281485 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DBF8B422E24EE900281485 /* SessionKitWatch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		50DBF84E22E24E4800281485 /* SessionKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50DBF85722E24E4800281485 /* Build configuration list for PBXNativeTarget "SessionKit" */;
+			buildPhases = (
+				50DBF84A22E24E4800281485 /* Headers */,
+				50DBF84B22E24E4800281485 /* Sources */,
+				50DBF84C22E24E4800281485 /* Frameworks */,
+				50DBF84D22E24E4800281485 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SessionKit;
+			productName = SessionKit;
+			productReference = 50DBF84F22E24E4800281485 /* SessionKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50DBF8B122E24EE900281485 /* SessionKitWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50DBF8DA22E24EE900281485 /* Build configuration list for PBXNativeTarget "SessionKitWatch" */;
+			buildPhases = (
+				50DBF8B222E24EE900281485 /* Headers */,
+				50DBF8B522E24EE900281485 /* Sources */,
+				50DBF8D422E24EE900281485 /* Frameworks */,
+				50DBF8D522E24EE900281485 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SessionKitWatch;
+			productName = SessionKit;
+			productReference = 50DBF8DD22E24EE900281485 /* SessionKitWatch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50DBF84622E24E4800281485 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Ferhat Abdullahoglu";
+				TargetAttributes = {
+					50DBF84E22E24E4800281485 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 50DBF84922E24E4800281485 /* Build configuration list for PBXProject "SessionKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 50DBF84522E24E4800281485;
+			productRefGroup = 50DBF85022E24E4800281485 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50DBF84E22E24E4800281485 /* SessionKit */,
+				50DBF8B122E24EE900281485 /* SessionKitWatch */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50DBF84D22E24E4800281485 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DBF88F22E24E9500281485 /* TrBase.strings in Resources */,
+				50DBF8A622E24E9500281485 /* DKBreathView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DBF8D522E24EE900281485 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DBF8D722E24EE900281485 /* TrBase.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50DBF84B22E24E4800281485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DBF8AA22E24E9500281485 /* MediaPlayerControllable.swift in Sources */,
+				50DBF89022E24E9500281485 /* SessionData.xcdatamodeld in Sources */,
+				50DBF89922E24E9500281485 /* DKSession+CoreDataProperties.swift in Sources */,
+				50DBF89E22E24E9500281485 /* DKCategory+CoreDataProperties.swift in Sources */,
+				50DBF89D22E24E9500281485 /* DKCategory+CoreDataClass.swift in Sources */,
+				50DBF8B022E24E9500281485 /* DownloadService.swift in Sources */,
+				50DBF8A922E24E9500281485 /* SessionDownloadable.swift in Sources */,
+				50DBF8A822E24E9500281485 /* SessionPlayable.swift in Sources */,
+				50DBF8AB22E24E9500281485 /* DKCSIndexible.swift in Sources */,
+				50DBF89122E24E9500281485 /* DKBreathView.swift in Sources */,
+				50DBF8A122E24E9500281485 /* SubversionDbModel.swift in Sources */,
+				50DBF8AF22E24E9500281485 /* DKSessionDataHandler.swift in Sources */,
+				50DBF89522E24E9500281485 /* DKSubversion+CoreDataProperties.swift in Sources */,
+				50DBF89822E24E9500281485 /* DKSession.swift in Sources */,
+				50DBF89C22E24E9500281485 /* DKSessionTheme+CoreDataClass.swift in Sources */,
+				50DBF89F22E24E9500281485 /* DKCategory.swift in Sources */,
+				50DBF8A422E24E9500281485 /* _DKSessionDataHandler.swift in Sources */,
+				50DBF89622E24E9500281485 /* DKSubversion+CoreDataClass.swift in Sources */,
+				50DBF89322E24E9500281485 /* DKPriveSession+CoreDataClass.swift in Sources */,
+				50DBF8A322E24E9500281485 /* _CGFloat.swift in Sources */,
+				50DBF89B22E24E9500281485 /* DKSessionTheme+CoreDataProperties.swift in Sources */,
+				50DBF8A022E24E9500281485 /* SessionDbModel.swift in Sources */,
+				50DBF8A522E24E9500281485 /* _String.swift in Sources */,
+				50DBF8A222E24E9500281485 /* _Double.swift in Sources */,
+				50DBF8AE22E24E9500281485 /* FileSystemSetup.swift in Sources */,
+				50DBF89422E24E9500281485 /* DKSubversion.swift in Sources */,
+				50DBF89222E24E9500281485 /* DKPriveSession+CoreDataProperties.swift in Sources */,
+				50DBF89722E24E9500281485 /* DKSession+CoreDataClass.swift in Sources */,
+				50DBF89A22E24E9500281485 /* DKSessionTheme.swift in Sources */,
+				50DBF8AD22E24E9500281485 /* FileSingleton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DBF8B522E24EE900281485 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50DBF8B722E24EE900281485 /* SessionData.xcdatamodeld in Sources */,
+				50DBF8B822E24EE900281485 /* DKSession+CoreDataProperties.swift in Sources */,
+				50DBF8B922E24EE900281485 /* DKCategory+CoreDataProperties.swift in Sources */,
+				50DBF8BA22E24EE900281485 /* DKCategory+CoreDataClass.swift in Sources */,
+				50DBF8C022E24EE900281485 /* SubversionDbModel.swift in Sources */,
+				50DBF8C122E24EE900281485 /* DKSessionDataHandler.swift in Sources */,
+				50DBF8C222E24EE900281485 /* DKSubversion+CoreDataProperties.swift in Sources */,
+				50DBF8C322E24EE900281485 /* DKSession.swift in Sources */,
+				50DBF8C522E24EE900281485 /* DKCategory.swift in Sources */,
+				50DBF8C722E24EE900281485 /* DKSubversion+CoreDataClass.swift in Sources */,
+				50DBF8C822E24EE900281485 /* DKPriveSession+CoreDataClass.swift in Sources */,
+				50DBF8CB22E24EE900281485 /* SessionDbModel.swift in Sources */,
+				50DBF8CC22E24EE900281485 /* _String.swift in Sources */,
+				50DBF8CE22E24EE900281485 /* FileSystemSetup.swift in Sources */,
+				50DBF8CF22E24EE900281485 /* DKSubversion.swift in Sources */,
+				50DBF8D022E24EE900281485 /* DKPriveSession+CoreDataProperties.swift in Sources */,
+				50DBF8D122E24EE900281485 /* DKSession+CoreDataClass.swift in Sources */,
+				50DBF8D322E24EE900281485 /* FileSingleton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		50DBF85522E24E4800281485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		50DBF85622E24E4800281485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		50DBF85822E24E4800281485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K3XQNT3L95;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SessionKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.Mastermind.SessionKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50DBF85922E24E4800281485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K3XQNT3L95;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SessionKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.Mastermind.SessionKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50DBF8DB22E24EE900281485 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K3XQNT3L95;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SessionKit/InfoWatch.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.Mastermind.SessionKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "";
+				"TARGETED_DEVICE_FAMILY[sdk=watchos*]" = "";
+				"TARGETED_DEVICE_FAMILY[sdk=watchsimulator*]" = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		50DBF8DC22E24EE900281485 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = K3XQNT3L95;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/SessionKit/InfoWatch.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ferhatab.Mastermind.SessionKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "";
+				"TARGETED_DEVICE_FAMILY[sdk=watchos*]" = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50DBF84922E24E4800281485 /* Build configuration list for PBXProject "SessionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DBF85522E24E4800281485 /* Debug */,
+				50DBF85622E24E4800281485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50DBF85722E24E4800281485 /* Build configuration list for PBXNativeTarget "SessionKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DBF85822E24E4800281485 /* Debug */,
+				50DBF85922E24E4800281485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50DBF8DA22E24EE900281485 /* Build configuration list for PBXNativeTarget "SessionKitWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50DBF8DB22E24EE900281485 /* Debug */,
+				50DBF8DC22E24EE900281485 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		50DBF85F22E24E9500281485 /* SessionData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				50DBF86022E24E9500281485 /* SessionData.xcdatamodel */,
+			);
+			currentVersion = 50DBF86022E24E9500281485 /* SessionData.xcdatamodel */;
+			path = SessionData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 50DBF84622E24E4800281485 /* Project object */;
+}
