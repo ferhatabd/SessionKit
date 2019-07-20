@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		50DBF88F22E24E9500281485 /* TrBase.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50DBF85E22E24E9500281485 /* TrBase.strings */; };
-		50DBF89022E24E9500281485 /* SessionData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF85F22E24E9500281485 /* SessionData.xcdatamodeld */; };
 		50DBF89122E24E9500281485 /* DKBreathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86322E24E9500281485 /* DKBreathView.swift */; };
 		50DBF89222E24E9500281485 /* DKPriveSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86522E24E9500281485 /* DKPriveSession+CoreDataProperties.swift */; };
 		50DBF89322E24E9500281485 /* DKPriveSession+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86622E24E9500281485 /* DKPriveSession+CoreDataClass.swift */; };
@@ -39,8 +38,6 @@
 		50DBF8AE22E24E9500281485 /* FileSystemSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88A22E24E9500281485 /* FileSystemSetup.swift */; };
 		50DBF8AF22E24E9500281485 /* DKSessionDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88B22E24E9500281485 /* DKSessionDataHandler.swift */; };
 		50DBF8B022E24E9500281485 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88C22E24E9500281485 /* DownloadService.swift */; };
-		50DBF8B422E24EE900281485 /* SessionKitWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DBF85B22E24E9500281485 /* SessionKitWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50DBF8B722E24EE900281485 /* SessionData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF85F22E24E9500281485 /* SessionData.xcdatamodeld */; };
 		50DBF8B822E24EE900281485 /* DKSession+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF86E22E24E9500281485 /* DKSession+CoreDataProperties.swift */; };
 		50DBF8B922E24EE900281485 /* DKCategory+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87522E24E9500281485 /* DKCategory+CoreDataProperties.swift */; };
 		50DBF8BA22E24EE900281485 /* DKCategory+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF87422E24E9500281485 /* DKCategory+CoreDataClass.swift */; };
@@ -60,14 +57,15 @@
 		50DBF8D322E24EE900281485 /* FileSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DBF88922E24E9500281485 /* FileSingleton.swift */; };
 		50DBF8D722E24EE900281485 /* TrBase.strings in Resources */ = {isa = PBXBuildFile; fileRef = 50DBF85E22E24E9500281485 /* TrBase.strings */; };
 		50DBF8DF22E24F3100281485 /* SessionKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 50DBF85C22E24E9500281485 /* SessionKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50F5630222E315AA00CEB3D6 /* SessionKitWatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 50F5630122E3159500CEB3D6 /* SessionKitWatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50F5630522E316B700CEB3D6 /* SessionData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50F5630322E316B700CEB3D6 /* SessionData.xcdatamodeld */; };
+		50F5630622E316BB00CEB3D6 /* SessionData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 50F5630322E316B700CEB3D6 /* SessionData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		50DBF84F22E24E4800281485 /* SessionKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		50DBF85B22E24E9500281485 /* SessionKitWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionKitWatch.h; sourceTree = "<group>"; };
 		50DBF85C22E24E9500281485 /* SessionKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionKit.h; sourceTree = "<group>"; };
 		50DBF85E22E24E9500281485 /* TrBase.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = TrBase.strings; sourceTree = "<group>"; };
-		50DBF86022E24E9500281485 /* SessionData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SessionData.xcdatamodel; sourceTree = "<group>"; };
 		50DBF86322E24E9500281485 /* DKBreathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKBreathView.swift; sourceTree = "<group>"; };
 		50DBF86522E24E9500281485 /* DKPriveSession+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKPriveSession+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		50DBF86622E24E9500281485 /* DKPriveSession+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DKPriveSession+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -101,6 +99,8 @@
 		50DBF88B22E24E9500281485 /* DKSessionDataHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DKSessionDataHandler.swift; sourceTree = "<group>"; };
 		50DBF88C22E24E9500281485 /* DownloadService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
 		50DBF8DD22E24EE900281485 /* SessionKitWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SessionKitWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50F5630122E3159500CEB3D6 /* SessionKitWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SessionKitWatch.h; sourceTree = "<group>"; };
+		50F5630422E316B700CEB3D6 /* SessionData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SessionData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,11 +141,11 @@
 		50DBF85122E24E4800281485 /* SessionKit */ = {
 			isa = PBXGroup;
 			children = (
+				50F5630322E316B700CEB3D6 /* SessionData.xcdatamodeld */,
 				50DBF88722E24E9500281485 /* Info.plist */,
 				50DBF88122E24E9500281485 /* InfoWatch.plist */,
 				50DBF85C22E24E9500281485 /* SessionKit.h */,
-				50DBF85B22E24E9500281485 /* SessionKitWatch.h */,
-				50DBF85F22E24E9500281485 /* SessionData.xcdatamodeld */,
+				50F5630122E3159500CEB3D6 /* SessionKitWatch.h */,
 				50DBF86122E24E9500281485 /* Models */,
 				50DBF88222E24E9500281485 /* Protocols */,
 				50DBF87A22E24E9500281485 /* Extensions */,
@@ -300,7 +300,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50DBF8B422E24EE900281485 /* SessionKitWatch.h in Headers */,
+				50F5630222E315AA00CEB3D6 /* SessionKitWatch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +401,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				50DBF8AA22E24E9500281485 /* MediaPlayerControllable.swift in Sources */,
-				50DBF89022E24E9500281485 /* SessionData.xcdatamodeld in Sources */,
 				50DBF89922E24E9500281485 /* DKSession+CoreDataProperties.swift in Sources */,
 				50DBF89E22E24E9500281485 /* DKCategory+CoreDataProperties.swift in Sources */,
 				50DBF89D22E24E9500281485 /* DKCategory+CoreDataClass.swift in Sources */,
@@ -409,6 +408,7 @@
 				50DBF8A922E24E9500281485 /* SessionDownloadable.swift in Sources */,
 				50DBF8A822E24E9500281485 /* SessionPlayable.swift in Sources */,
 				50DBF8AB22E24E9500281485 /* DKCSIndexible.swift in Sources */,
+				50F5630522E316B700CEB3D6 /* SessionData.xcdatamodeld in Sources */,
 				50DBF89122E24E9500281485 /* DKBreathView.swift in Sources */,
 				50DBF8A122E24E9500281485 /* SubversionDbModel.swift in Sources */,
 				50DBF8AF22E24E9500281485 /* DKSessionDataHandler.swift in Sources */,
@@ -437,7 +437,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50DBF8B722E24EE900281485 /* SessionData.xcdatamodeld in Sources */,
 				50DBF8B822E24EE900281485 /* DKSession+CoreDataProperties.swift in Sources */,
 				50DBF8B922E24EE900281485 /* DKCategory+CoreDataProperties.swift in Sources */,
 				50DBF8BA22E24EE900281485 /* DKCategory+CoreDataClass.swift in Sources */,
@@ -446,6 +445,7 @@
 				50DBF8C222E24EE900281485 /* DKSubversion+CoreDataProperties.swift in Sources */,
 				50DBF8C322E24EE900281485 /* DKSession.swift in Sources */,
 				50DBF8C522E24EE900281485 /* DKCategory.swift in Sources */,
+				50F5630622E316BB00CEB3D6 /* SessionData.xcdatamodeld in Sources */,
 				50DBF8C722E24EE900281485 /* DKSubversion+CoreDataClass.swift in Sources */,
 				50DBF8C822E24EE900281485 /* DKPriveSession+CoreDataClass.swift in Sources */,
 				50DBF8CB22E24EE900281485 /* SessionDbModel.swift in Sources */,
@@ -729,12 +729,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		50DBF85F22E24E9500281485 /* SessionData.xcdatamodeld */ = {
+		50F5630322E316B700CEB3D6 /* SessionData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				50DBF86022E24E9500281485 /* SessionData.xcdatamodel */,
+				50F5630422E316B700CEB3D6 /* SessionData.xcdatamodel */,
 			);
-			currentVersion = 50DBF86022E24E9500281485 /* SessionData.xcdatamodel */;
+			currentVersion = 50F5630422E316B700CEB3D6 /* SessionData.xcdatamodel */;
 			path = SessionData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
