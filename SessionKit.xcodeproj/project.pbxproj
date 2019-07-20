@@ -121,6 +121,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50BAE5A122E32C4200DF973C /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF85C22E24E9500281485 /* SessionKit.h */,
+				50BAE5A622E32CA800DF973C /* Models */,
+				50DBF88222E24E9500281485 /* Protocols */,
+				50BAE5A822E32CFE00DF973C /* Extensions */,
+				50BAE5A722E32CE000DF973C /* Services */,
+				50DBF87F22E24E9500281485 /* NibFiles */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+		50BAE5A222E32C4C00DF973C /* watchos */ = {
+			isa = PBXGroup;
+			children = (
+				50F5630122E3159500CEB3D6 /* SessionKitWatch.h */,
+			);
+			path = watchos;
+			sourceTree = "<group>";
+		};
+		50BAE5A322E32C5A00DF973C /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				50F5630322E316B700CEB3D6 /* SessionData.xcdatamodeld */,
+				50DBF86122E24E9500281485 /* Models */,
+				50DBF87A22E24E9500281485 /* Extensions */,
+				50DBF88822E24E9500281485 /* Services */,
+				50DBF85D22E24E9500281485 /* Localizations */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		50BAE5A622E32CA800DF973C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF86222E24E9500281485 /* DKBreath */,
+				50DBF86F22E24E9500281485 /* DKSessionTheme */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		50BAE5A722E32CE000DF973C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF88C22E24E9500281485 /* DownloadService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		50BAE5A822E32CFE00DF973C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				50DBF87B22E24E9500281485 /* _Double.swift */,
+				50DBF87C22E24E9500281485 /* _CGFloat.swift */,
+				50DBF87D22E24E9500281485 /* _DKSessionDataHandler.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		50DBF84522E24E4800281485 = {
 			isa = PBXGroup;
 			children = (
@@ -141,17 +201,11 @@
 		50DBF85122E24E4800281485 /* SessionKit */ = {
 			isa = PBXGroup;
 			children = (
-				50F5630322E316B700CEB3D6 /* SessionData.xcdatamodeld */,
 				50DBF88722E24E9500281485 /* Info.plist */,
 				50DBF88122E24E9500281485 /* InfoWatch.plist */,
-				50DBF85C22E24E9500281485 /* SessionKit.h */,
-				50F5630122E3159500CEB3D6 /* SessionKitWatch.h */,
-				50DBF86122E24E9500281485 /* Models */,
-				50DBF88222E24E9500281485 /* Protocols */,
-				50DBF87A22E24E9500281485 /* Extensions */,
-				50DBF88822E24E9500281485 /* Services */,
-				50DBF85D22E24E9500281485 /* Localizations */,
-				50DBF87F22E24E9500281485 /* NibFiles */,
+				50BAE5A322E32C5A00DF973C /* shared */,
+				50BAE5A222E32C4C00DF973C /* watchos */,
+				50BAE5A122E32C4200DF973C /* ios */,
 			);
 			path = SessionKit;
 			sourceTree = "<group>";
@@ -167,11 +221,9 @@
 		50DBF86122E24E9500281485 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				50DBF86222E24E9500281485 /* DKBreath */,
 				50DBF86422E24E9500281485 /* DKPriveSession */,
 				50DBF86722E24E9500281485 /* DKSubversion */,
 				50DBF86B22E24E9500281485 /* DKSession */,
-				50DBF86F22E24E9500281485 /* DKSessionTheme */,
 				50DBF87322E24E9500281485 /* DKCategory */,
 				50DBF87722E24E9500281485 /* SessionDbModels */,
 			);
@@ -247,9 +299,6 @@
 		50DBF87A22E24E9500281485 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				50DBF87B22E24E9500281485 /* _Double.swift */,
-				50DBF87C22E24E9500281485 /* _CGFloat.swift */,
-				50DBF87D22E24E9500281485 /* _DKSessionDataHandler.swift */,
 				50DBF87E22E24E9500281485 /* _String.swift */,
 			);
 			path = Extensions;
@@ -280,7 +329,6 @@
 				50DBF88922E24E9500281485 /* FileSingleton.swift */,
 				50DBF88A22E24E9500281485 /* FileSystemSetup.swift */,
 				50DBF88B22E24E9500281485 /* DKSessionDataHandler.swift */,
-				50DBF88C22E24E9500281485 /* DownloadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
