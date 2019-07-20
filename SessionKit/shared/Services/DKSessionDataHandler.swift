@@ -49,12 +49,13 @@ public class DKSessionDataHandler: NSObject {
     // -----------------------------------
     // Private / Internal properties
     // -----------------------------------
-    internal class var bundleId: String {
-        #if os(iOS)
-            return "com.ferhatab.SessionKit"
-        #else
-            return "com.ferhatab.SessionKitWatch"
-        #endif
+    internal class var bundleId: String { // TBA - must fix this issue with CocoaPods DSL version 1.8.0
+        return "org.cocoapods.SessionKit"
+//        #if os(iOS)
+//            return "com.ferhatab.SessionKit"
+//        #else
+//            return "com.ferhatab.SessionKitWatch"
+//        #endif
     }
     // -----------------------------------
     
