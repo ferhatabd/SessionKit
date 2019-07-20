@@ -50,7 +50,8 @@ public class DKSessionDataHandler: NSObject {
     // Private / Internal properties
     // -----------------------------------
     internal class var bundleId: String { // TBA - must fix this issue with CocoaPods DSL version 1.8.0
-        return "org.cocoapods.SessionKit"
+//        return "org.cocoapods.SessionKit"
+        return Bundle(for: DKSessionDataHandler.self).bundleIdentifier!
 //        #if os(iOS)
 //            return "com.ferhatab.SessionKit"
 //        #else
