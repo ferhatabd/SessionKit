@@ -343,6 +343,8 @@ public class DKSessionDataHandler: NSObject {
         
         _managedObjectContext.persistentStoreCoordinator = psc
         
+        _managedObjectContext.retainsRegisteredObjects = true
+        
         return _managedObjectContext
     }
     
