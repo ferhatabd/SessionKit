@@ -134,7 +134,7 @@ public extension MediaPlayerControllable {
             event.command == MPRemoteCommandCenter.shared().togglePlayPauseCommand ||
             event.command == MPRemoteCommandCenter.shared().stopCommand {
             
-            DispatchQueue.main.async {
+            if Thread.isMainThread {
                 if self.audioPlayer.isPlaying {
                     self.setMeta(with: self.mediaInfo(forPause: true))
                 } else {
@@ -142,6 +142,17 @@ public extension MediaPlayerControllable {
                 }
                 
                 self.playPause()
+            } else {
+                
+                DispatchQueue.main.async {
+                    if self.audioPlayer.isPlaying {
+                        self.setMeta(with: self.mediaInfo(forPause: true))
+                    } else {
+                        self.setMeta(with: self.mediaInfo(forPause: false))
+                    }
+                    
+                    self.playPause()
+                }
             }
             return .success
         } else {
