@@ -43,9 +43,8 @@ public extension DKSubversion {
         get {
             // Check if the filePath for Url has been retrieved
             if !self.Url.isEmpty {
-                var tmpAudio = AVAudioPlayer()
                 do {
-                    tmpAudio = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Url))
+                    let tmpAudio = try AVAudioPlayer(contentsOf: URL.init(fileURLWithPath: Url))
                     return tmpAudio.duration
                 } catch {
                     return 0

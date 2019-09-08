@@ -28,7 +28,7 @@ public protocol SessionPlayable: AVAudioPlayerDelegate {
     /**
      Audio player
      */
-    var audioPlayer: AVAudioPlayer { get set }
+    var audioPlayer: AVAudioPlayer! { get set }
     
   
     /**
