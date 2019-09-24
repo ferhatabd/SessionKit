@@ -49,6 +49,7 @@ open class DKCategory: NSManagedObject {
         self.id = Int16(id)
         self.wasUsedLatest = isDefault
         self.imageAverageColor = nil
+        self.isSpecial = false 
     }
     
     

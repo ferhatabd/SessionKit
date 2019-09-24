@@ -44,6 +44,11 @@ public struct SessionDbModel: Equatable {
     public var sv = [SubVersionDbModel]()
     
     /**
+     Display name
+     */
+    public var displayName: String?
+    
+    /**
      ID of the session
      */
     public var id: Double
@@ -63,6 +68,8 @@ public struct SessionDbModel: Equatable {
         
         let _id = _data["id"] as? Double
         
+        let _displayName = _data["displayName"] as? String
+        
         guard let _sv = _data["subVersions"] as? [[String:Any]] else {return nil}
         
         for __sv in _sv {
@@ -75,5 +82,6 @@ public struct SessionDbModel: Equatable {
         self.expressionLong = _expressionLong ?? ""
         self.expressionShort = _expressionShort ?? ""
         self.id = _id ?? 0
+        self.displayName = _displayName
     }
 }

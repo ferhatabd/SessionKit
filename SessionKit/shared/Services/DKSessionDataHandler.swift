@@ -58,6 +58,7 @@ public class DKSessionDataHandler: NSObject {
 //            return "com.ferhatab.SessionKitWatch"
 //        #endif
     }
+    
     // -----------------------------------
     
     
@@ -183,7 +184,7 @@ public class DKSessionDataHandler: NSObject {
      
      The completion is called in the main queue.
      */
-    public func dbUpdate(with _data: DKSessionUpdateAdapter, completion: ((Bool)->Void)?=nil)  {
+    public func dbUpdate(with _data: DKSessionUpdateAdapter, specialCategory isSpecial: Bool = false, completion: ((Bool)->Void)?=nil)  {
 
         //
         // Execute the request on a background thread
@@ -192,7 +193,8 @@ public class DKSessionDataHandler: NSObject {
             ///
             /// Currently existing categories
             ///
-            guard var _categories = self.fetchEntities(for: NSStringFromClass(DKCategory.self), predicate: nil, sortDescriptor: [NSSortDescriptor.dkCategoryIncreasingId]) as? [DKCategory] else {
+            let predicate = NSPredicate(format: "isSpecial = %d", isSpecial)
+            guard var _categories = self.fetchEntities(for: NSStringFromClass(DKCategory.self), predicate: predicate, sortDescriptor: [NSSortDescriptor.dkCategoryIncreasingId]) as? [DKCategory] else {
                 completion?(false)
                 return
             }
@@ -222,6 +224,10 @@ public class DKSessionDataHandler: NSObject {
                 _maxId = self.getMaxId(_categories)
             }
             
+            if isSpecial {
+                print("fdf")
+            }
+            
             //
             // Get the categories and update - if a category doesn't exist, create it
             //
@@ -230,6 +236,7 @@ public class DKSessionDataHandler: NSObject {
                     _category.updateSessions(with: __data)
                 } else {
                     guard let _category = DKCategory(name: name, id: _maxId+1), let __data = _data[name] else {continue}
+                    _category.isSpecial = isSpecial
                     _category.updateSessions(with: __data)
                     _categories.append(_category)
                     _maxId = self.getMaxId(_categories)
@@ -238,14 +245,15 @@ public class DKSessionDataHandler: NSObject {
             
             let _result = self.saveManagedObjetContext()
             
+            
             //
             // Throw back to the main thread
             //
             DispatchQueue.main.async {
-                if _result {
+                if _result && !isSpecial {
                     UserDefaults.standard.set(true, forKey: "dkDbUpdateDoneOnce")
                 }
-                completion?(_result)
+                completion?(_result || isSpecial)
             }
         } // end of background disaptch
         
@@ -338,7 +346,7 @@ public class DKSessionDataHandler: NSObject {
     /**
      Gets the managedObjectContext
      */
-    private class func getMoc(with psc: NSPersistentStoreCoordinator) -> NSManagedObjectContext? {
+    private class func getMoc(with psc: NSPersistentStoreCoordinator    ) -> NSManagedObjectContext? {
         let _managedObjectContext = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
         
         _managedObjectContext.persistentStoreCoordinator = psc
@@ -364,6 +372,15 @@ public class DKSessionDataHandler: NSObject {
         })
         
         return _id
+    }
+    
+    /**
+     Creates a child context and assigns it to a parent
+     */
+    private class func getPrivateContext(parent: NSManagedObjectContext) -> NSManagedObjectContext {
+        let context = NSManagedObjectContext(concurrencyType: .privateQueueConcurrencyType)
+        context.parent = parent
+        return context
     }
     
     /**

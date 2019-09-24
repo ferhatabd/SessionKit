@@ -68,11 +68,12 @@ public extension DKCategory  {
      */
     func updateSessions(with _sessions: [SessionDbModel], completion: ((Bool)->Void)?=nil) {
         var _sessionModels = _sessions
+        let __sessions = _sessions
         
         //
         // Check the subversions which must be deleted
         //
-        if let _needsDelete = checkNeedsDelete(_sessions) {
+        if let _needsDelete = checkNeedsDelete(__sessions) {
             if #available(iOS 10, *) {
                 self.removeFromSessions(NSOrderedSet(array: _needsDelete))
             } else {
@@ -90,7 +91,7 @@ public extension DKCategory  {
         //
         // Check the subversions which must be added
         //
-        if let _needsAdd = checkNeedsAdd(_sessions) {
+        if let _needsAdd = checkNeedsAdd(__sessions) {
             _needsAdd.forEach { (_model) in
                 if let _session = DKSession(data: _model) {
                     _session.updateSubversions(with: _model.sv)
@@ -117,6 +118,7 @@ public extension DKCategory  {
             
             _existing.expressionLong = _model.expressionLong
             _existing.expressionShort = _model.expressionShort
+            _existing.dispName = _model.displayName
             _existing.updateSubversions(with: _model.sv)
         }
     }

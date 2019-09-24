@@ -27,6 +27,7 @@ extension DKSession {
     @NSManaged public var name: String
     @NSManaged public var parent: DKCategory?
     @NSManaged public var subVersion: NSOrderedSet?
+    @NSManaged public var dispName: String?
     
 }
 

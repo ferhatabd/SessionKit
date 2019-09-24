@@ -26,6 +26,7 @@ extension DKCategory {
     @NSManaged public var rawImageData: Data?
     @NSManaged public var wasUsedLatest: Bool
     @NSManaged public var imageAverageColor: NSObject?
+    @NSManaged public var isSpecial: Bool
     
 }
 

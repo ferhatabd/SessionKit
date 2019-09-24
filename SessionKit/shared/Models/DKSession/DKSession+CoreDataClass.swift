@@ -68,7 +68,7 @@ open class DKSession: NSManagedObject {
          - expressionLong: Long epxression of the new session
      - returns:
      */
-    public convenience init?(name: String, expressionShort: String?="", expressionLong: String?="", isPremium: Bool=false, with subversions: [DKSubversion]?=nil, id: Double) {
+    public convenience init?(name: String, expressionShort: String?="", expressionLong: String?="", isPremium: Bool=false, with subversions: [DKSubversion]?=nil, id: Double, displayName: String?=nil) {
         
         let _moc = DKSessionDataHandler.default.managedObjectContext
         
@@ -83,6 +83,7 @@ open class DKSession: NSManagedObject {
         self.isPremium = isPremium
         self.id = id
         self.hasNewMember = false
+        self.dispName = displayName
     
         //
         // check for subversions
@@ -125,7 +126,7 @@ open class DKSession: NSManagedObject {
         //
         // Create the session object
         //
-        self.init(name: data.name, expressionShort: data.expressionShort, expressionLong: data.expressionLong, isPremium: data.isPremium, with: _subversions, id: data.id)
+        self.init(name: data.name, expressionShort: data.expressionShort, expressionLong: data.expressionLong, isPremium: data.isPremium, with: _subversions, id: data.id, displayName: data.displayName)
     }
     
     
