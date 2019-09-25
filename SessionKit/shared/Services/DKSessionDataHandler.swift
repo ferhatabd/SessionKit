@@ -224,9 +224,6 @@ public class DKSessionDataHandler: NSObject {
                 _maxId = self.getMaxId(_categories)
             }
             
-            if isSpecial {
-                print("fdf")
-            }
             
             //
             // Get the categories and update - if a category doesn't exist, create it
