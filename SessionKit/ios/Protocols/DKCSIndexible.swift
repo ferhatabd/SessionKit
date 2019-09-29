@@ -59,8 +59,8 @@ internal extension DKCSIndexible {
         
         for _session in session {
             let searchItemAttributeSet = CSSearchableItemAttributeSet(itemContentType: kUTTypeMP3 as String)
-            searchItemAttributeSet.artist = "Dingin Kafa"
-            searchItemAttributeSet.album = _session.parent?.categoryName?.getLocalized() ?? "Dingin Kafa"
+            searchItemAttributeSet.artist = "Crea"
+            searchItemAttributeSet.album = _session.parent?.categoryName?.getLocalized() ?? "Crea"
             searchItemAttributeSet.displayName = _session.name
             searchItemAttributeSet.title = _session.name
             searchItemAttributeSet.subject = _session.expressionShort
