@@ -99,4 +99,19 @@ public extension DKSubversion {
         }
     }
     
+    /// Deletes the downloaded source file if it's not a fixed version
+    /// and has already been downloaded
+    /// - Returns: True if the operataion is successful
+    @discardableResult
+    func deleteSource() -> Bool {
+        guard !self.isFixed, !self.Url.isEmpty else { return false }
+        do {
+            try fileManager.removeItem(at: URL(fileURLWithPath: self.Url))
+            return true
+        } catch {
+            print("subversion wasn't able to be deleted with error: \(error.localizedDescription)")
+            return false
+        }
+    }
+    
 }
